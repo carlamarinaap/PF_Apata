@@ -1,0 +1,29 @@
+@import 'variables';
+@import 'mixins';
+
+/*INDEX*/
+.bodyInicio {
+  background-image: url(../img/wallpaper.jpeg);
+  background-size: 1400px;
+  @include img_background
+}
+.espaciado {
+  display: block;
+  letter-spacing: 20px;
+}
+.form-control {
+  @include inputs;
+  &:focus {
+    @include inputs;
+    outline: 3px solid map-get($colores, amarillo);
+  }
+  &::placeholder {
+    color: map-get($colores, blanco);
+  }
+}
+.form-select {
+  @include inputs;
+  &:focus {
+    outline: 3px solid map-get($colores, amarillo);
+  }
+}

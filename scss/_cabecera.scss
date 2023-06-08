@@ -1,0 +1,11 @@
+@import 'variables';
+@import 'mixins';
+
+
+/*CABECERA*/
+
+.bodyLinks {
+  @include img_background;
+  background-image: url(../img/wallpaper_pages.jpg);
+  background-position-y: top;
+}
