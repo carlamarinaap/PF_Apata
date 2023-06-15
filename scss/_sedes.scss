@@ -3,9 +3,9 @@
 /*SEDES*/
 .bg_img {
   @include bordes;
-  margin: 1rem auto;
-  background-image: url(../img/gimnasios.jpg);
+  @include img_background ('../img/gimnasios.jpg');
   background-size: cover;
+  margin: 3rem auto;
 }
 .sede {
   @include para_sedes;

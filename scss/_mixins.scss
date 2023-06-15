@@ -8,7 +8,8 @@
   border-radius: 0.3rem;
   border: 1px solid map-get($colores, blanco);
 }
-@mixin img_background{
+@mixin img_background ($url){
+  background-image: url($url);
   background-position: center;
   background-repeat: no-repeat;
 }

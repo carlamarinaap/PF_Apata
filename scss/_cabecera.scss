@@ -5,7 +5,19 @@
 /*CABECERA*/
 
 .bodyLinks {
-  @include img_background;
-  background-image: url(../img/wallpaper_pages.jpg);
-  background-position-y: top;
+  .img_bodyLinks {
+    position:absolute;
+    top: 0px;
+    z-index: -100;
+    img {
+      width: 100vw;
+    }
+  }
+  h2 {
+    padding: 10vw 0;
+  }
+  .cabecera {
+    position: relative;
+    text-align: center;
+  }
 }

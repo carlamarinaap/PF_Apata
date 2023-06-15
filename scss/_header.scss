@@ -7,15 +7,17 @@ header {
 .navbar-nav {
   li {
     padding: 0 10px;
+    .activa {
+      color: map-get($colores, amarillo) ;
+    }
     a {
       color: map-get($colores, blanco);
-      transition: all 0.2s; 
+      transition: color 0.2s; 
       &:hover {
         color: map-get($colores, amarillo);
       }
     }
   }
 }
-.activa {
-  color: map-get($colores, amarillo) !important;
-}
+
+

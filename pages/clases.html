@@ -28,6 +28,10 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body id="clases" class="bodyLinks bg-black">
     <!--Inicio de encabezado-->
@@ -69,7 +73,9 @@
               </li>
             </ul>
             <div class="d-flex">
-              <a href="./inicia_sesion.html" class="btn btn-outline-warning"
+              <a
+                href="./inicia_sesion.html"
+                class="btn btn-sm btn-outline-warning"
                 >Inicia Sesión</a
               >
             </div>
@@ -79,70 +85,53 @@
     </header>
     <!--Fin de encabezado-->
     <!-- CABECERA -->
-    <section class="cabecera py-md-4 my-md-5 m-0 text-center">
-      <h2 class="text-warning xl py-5">Clases</h2>
+    <div class="img_bodyLinks">
+      <img src="../img/wallpaper_pages.jpg" alt="cabecera" class="img-fluid" />
+    </div>
+    <section class="cabecera">
+      <h2 class="text-warning">Clases</h2>
     </section>
     <!-- Fin CABECERA -->
     <!--Inicio de principal-->
     <main>
-      <section class="sedesClases">
-        <div class="container text-center sticky-top bg-black">
-          <h3 class="text-warning d-none d-md-block">Sedes</h3>
-          <ul class="list-unstyled">
-            <li class="d-md-inline d-none px-4">
-              <a href="#buenosaires" class="text-white">Buenos Aires</a>
-            </li>
-            <li class="d-md-inline d-none px-4">
-              <a href="#santafe" class="text-white">Santa Fe</a>
-            </li>
-            <li class="d-md-inline d-none px-4">
-              <a href="#mendoza" class="text-white">Mendoza</a>
-            </li>
-            <li class="d-md-inline d-none px-4">
-              <a href="#sanluis" class="text-white">San Luis</a>
-            </li>
+      <section class="container">
+        <div class="menu_sedes">
+          <h3>Sedes</h3>
+          <ul class="vista_desktop">
+            <li><a href="#buenosaires">Buenos Aires</a></li>
+            <li><a href="#santafe">Santa Fe</a></li>
+            <li><a href="#mendoza">Mendoza</a></li>
+            <li><a href="#sanluis">San Luis</a></li>
           </ul>
-          <ul class="d-md-none d-block list-unstyled pb-5">
-            <li class="py-4">
-              <a
-                href="../archives/buenos-aires.xlsx"
-                download="SedeBsAs2023"
-                class="text-white"
+          <p class="d-md-none">
+            Tocá sobre cada sede para descargar tu grilla de clases
+          </p>
+          <ul class="vista_mobile">
+            <li class="animate__animated animate__backInLeft">
+              <a href="../archives/buenos-aires.xlsx" download="BsAs2023"
                 >Buenos Aires</a
               >
             </li>
-            <li class="py-4">
-              <a
-                href="../archives/santa-fe.xlsx"
-                download="SedeStaFe2023"
-                class="text-white"
+            <li class="animate__animated animate__backInRight">
+              <a href="../archives/santa-fe.xlsx" download="StaFe2023"
                 >Santa Fe</a
               >
             </li>
-            <li class="py-4">
-              <a
-                href="../archives/mendoza.xlsx"
-                download="SedeMza2023"
-                class="text-white"
-                >Mendoza</a
-              >
+            <li class="animate__animated animate__backInLeft">
+              <a href="../archives/mendoza.xlsx" download="Mza2023">Mendoza</a>
             </li>
-            <li class="py-4">
-              <a
-                href="../archives/san-luis.xlsx"
-                download="SedeSLuis2023"
-                class="text-white"
+            <li class="animate__animated animate__backInRight">
+              <a href="../archives/san-luis.xlsx" download="SLuis2023"
                 >San Luis</a
               >
             </li>
           </ul>
         </div>
-
         <div class="clases container">
           <div id="buenosaires" class="pt-md-5"></div>
-          <div class="p-md-5 text-center">
+          <div class="pt-5 text-center">
             <h3 class="text-warning fs-1">Buenos Aires</h3>
-            <table class="border coda table">
+            <table class="border table">
               <tr>
                 <th scope="col">Horarios</th>
                 <th scope="col">Lunes</th>
@@ -248,11 +237,10 @@
               <a href="#clases" class="volver text-warning">Volver</a>
             </div>
           </div>
-
-          <div id="santafe" class="pt-5"></div>
-          <div class="p-5 text-center">
+          <div id="santafe" class="pt-md-5"></div>
+          <div class="pt-5 text-center">
             <h3 class="text-warning fs-1">Santa Fe</h3>
-            <table class="border text-center coda table">
+            <table class="border table">
               <tr>
                 <th>Horarios</th>
                 <th>Lunes</th>
@@ -358,10 +346,10 @@
               <a href="#clases" class="volver text-warning">Volver</a>
             </div>
           </div>
-          <div id="mendoza" class="pt-5"></div>
-          <div class="p-5 text-center">
+          <div id="mendoza" class="pt-md-5"></div>
+          <div class="pt-5 text-center">
             <h3 class="text-warning fs-1">Mendoza</h3>
-            <table class="border text-center coda table">
+            <table class="border table">
               <tr>
                 <th>Horarios</th>
                 <th>Lunes</th>
@@ -467,10 +455,10 @@
               <a href="#clases" class="volver text-warning">Volver</a>
             </div>
           </div>
-          <div id="sanluis" class="pt-5"></div>
-          <div class="p-5 text-center">
+          <div id="sanluis" class="pt-md-5"></div>
+          <div class="pt-5 text-center">
             <h3 class="text-warning fs-1">San Luis</h3>
-            <table class="border text-center coda table">
+            <table class="border table">
               <tr>
                 <th>Horarios</th>
                 <th>Lunes</th>
@@ -611,7 +599,7 @@
               ></a>
             </li>
           </ul>
-          <p class="px-4 d-none d-md-flex">
+          <p class="d-none d-md-flex">
             <strong><strong> Todos los derechos reservados</strong></strong>
           </p>
         </div>

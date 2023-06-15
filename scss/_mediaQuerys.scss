@@ -1,7 +1,47 @@
 @media (max-width: 767px) {
   /*GENERAL*/
+  .index, .sedeClases {
+    height: 85vh;
+  }
+  .contacto {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    transform: scale(150%);
+  }
   .bodyInicio, .bodyLinks, .bg_img {
     background-image: none;
+  }
+  .img_bodyLinks {
+    display: none;
+  }
+  /*HEADER*/
+  .navbar-nav {
+    li {
+      margin: 1rem;
+    }
+  }
+  /*INDEX*/
+  .bodyInicio {
+    main {
+      display: flex;
+      .seccion1 {
+        height: auto;
+        h1 {
+          display: none;
+        }
+        h3 {
+          padding-bottom: 0px;
+        }
+        align-self: center;
+      }
+    }
+  }
+  /*STAFF*/
+  .staff-container{
+    .tarjetaInterna {
+      opacity: 1;
+    }
   }
   /*SEDES*/
   .bg_img {
@@ -11,4 +51,32 @@
   .clases {
     display: none;
   }
+ .menu_sedes {
+  h3 {
+    display: none;
+  }
+  p {
+    font-size: 25px;
+  }
+   .vista_mobile {
+     display: flex;
+     padding: 0px;
+     list-style: none;
+     height: 70vh;
+     flex-direction: column;
+     text-align: center;
+     li {
+       padding: 3rem 0px;
+       a {
+       font-size: 30px;
+        color: map-get($colores,blanco);
+      }
+    }
+  }
+   .vista_desktop {
+     display: none;
+    }
+ }
+
+
 }

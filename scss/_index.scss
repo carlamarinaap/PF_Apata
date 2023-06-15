@@ -3,10 +3,22 @@
 
 /*INDEX*/
 .bodyInicio {
-  background-image: url(../img/wallpaper.jpeg);
-  background-size: 1400px;
-  @include img_background
-}
+  @include img_background('../img/wallpaper.jpeg');
+  main {
+    height: 85vh;
+    .seccion1 {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      height: 70vh;
+      justify-content:space-between;
+      h3 {
+        padding-bottom: 3rem;
+      }
+      }
+    }
+  }
+
 .espaciado {
   display: block;
   letter-spacing: 20px;
