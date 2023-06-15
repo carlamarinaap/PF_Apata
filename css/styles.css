@@ -15,6 +15,13 @@
 a {
   text-decoration: none;
 }
+a i {
+  transform: scale(100%);
+  transition: all 0.2s;
+}
+a:hover i {
+  transform: scale(115%);
+}
 
 /*HEADER*/
 header {
@@ -57,31 +64,21 @@ header {
   letter-spacing: 20px;
 }
 
-.form-control {
+.form-control, .form-select {
   background-color: rgba(255, 255, 255, 0.1);
   color: #FFFFFF;
   outline: none;
   transition: all 0.2s;
 }
-.form-control:focus {
+.form-control:focus, .form-select:focus {
   background-color: rgba(255, 255, 255, 0.1);
   color: #FFFFFF;
   outline: none;
   transition: all 0.2s;
   outline: 3px solid #ffc107;
 }
-.form-control::placeholder {
+.form-control::placeholder, .form-select::placeholder {
   color: #FFFFFF;
-}
-
-.form-select {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #FFFFFF;
-  outline: none;
-  transition: all 0.2s;
-}
-.form-select:focus {
-  outline: 3px solid #ffc107;
 }
 
 /*STAFF*/

@@ -11,7 +11,7 @@
   display: block;
   letter-spacing: 20px;
 }
-.form-control {
+.form-control, .form-select {
   @include inputs;
   &:focus {
     @include inputs;
@@ -19,11 +19,5 @@
   }
   &::placeholder {
     color: map-get($colores, blanco);
-  }
-}
-.form-select {
-  @include inputs;
-  &:focus {
-    outline: 3px solid map-get($colores, amarillo);
   }
 }

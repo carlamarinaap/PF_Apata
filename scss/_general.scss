@@ -14,4 +14,11 @@
 }
 a {
   text-decoration: none;
+  i {
+    transform: scale(100%);
+    transition: all 0.2s;
+  }
+  &:hover i{
+    transform: scale(115%);
+  }
 }
