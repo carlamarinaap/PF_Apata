@@ -15,10 +15,6 @@
   outline: 3px solid #ffc107;
 }
 
-.contacto, .inicioSesion {
-  height: 80vh;
-}
-
 li a {
   text-decoration: none;
 }
@@ -82,7 +78,7 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 70%;
+  height: 85%;
   justify-content: space-between;
 }
 .bodyInicio main .seccion1 h3 {
@@ -94,13 +90,13 @@ header {
   letter-spacing: 20px;
 }
 
-.form-control, .form-select {
+.form-control, .form-select, textarea {
   background-color: rgba(255, 255, 255, 0.1);
   color: #FFFFFF;
   outline: none;
   transition: all 0.2s;
 }
-.form-control:focus, .form-select:focus {
+.form-control:focus, .form-select:focus, textarea:focus {
   background-color: rgba(255, 255, 255, 0.1);
   color: #FFFFFF;
   outline: none;
@@ -224,6 +220,31 @@ iframe {
   padding: 0;
 }
 
+.comentarios {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.oficinas {
+  padding: 1rem;
+  width: 50%;
+  margin: 2rem auto;
+  border-radius: 0.3rem;
+  border: 1px solid #FFFFFF;
+}
+.oficinas ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.oficinas ul li {
+  text-align: center;
+}
+
+.inicioSesion {
+  height: 90vh;
+}
+
 .form_inicioSesion {
   margin: 0 auto;
   width: 50vw;
@@ -246,10 +267,10 @@ h2 {
 }
 
 h1, h2, h3, button, a {
+  text-align: center;
   font-family: "Frijole", cursive;
   font-weight: 200;
   color: #ffc107;
-  text-align: center;
 }
 h1 span, h2 span, h3 span, button span, a span {
   font-family: "Frijole", cursive;
@@ -259,16 +280,14 @@ h1 span, h2 span, h3 span, button span, a span {
 
 @media (max-width: 767px) {
   /*GENERAL*/
-  .index, .sedeClases {
+  .index,
+  .sedeClases,
+  .contacto {
     height: 85vh;
   }
-  .contacto {
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    transform: scale(150%);
-  }
-  .bodyInicio, .bodyLinks, .bg_img {
+  .bodyInicio,
+  .bodyLinks,
+  .bg_img {
     background-image: none;
   }
   .img_bodyLinks {
@@ -312,6 +331,22 @@ h1 span, h2 span, h3 span, button span, a span {
   .bg_img {
     border: none;
   }
+  /*CONTACTO*/
+  .comentarios {
+    width: 80%;
+  }
+  .contacto {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto .oficinas {
+    width: 80vw;
+  }
+  .contacto .oficinas ul {
+    flex-direction: column;
+  }
   /*CLASES*/
   .clases {
     display: none;
@@ -352,6 +387,13 @@ h1 span, h2 span, h3 span, button span, a span {
     }
   }
   /*INICIO SESION*/
+  .inicioSesion {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
   .form_inicioSesion {
     width: 75vw;
   }

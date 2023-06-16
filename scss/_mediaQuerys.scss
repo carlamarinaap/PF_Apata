@@ -1,43 +1,52 @@
 @media (max-width: 767px) {
+
   /*GENERAL*/
-  .index, .sedeClases {
+  .index,
+  .sedeClases,
+  .contacto {
     height: 85vh;
   }
-  .contacto {
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    transform: scale(150%);
-  }
-  .bodyInicio, .bodyLinks, .bg_img {
+
+  .bodyInicio,
+  .bodyLinks,
+  .bg_img {
     background-image: none;
   }
+
   .img_bodyLinks {
     display: none;
   }
+
   /*HEADER*/
   .navbar-nav {
     li {
       margin: 1rem;
+
       a {
         font-size: 20px;
       }
     }
   }
+
   /*INDEX*/
   .bodyInicio {
     main {
       display: flex;
+
       .seccion1 {
         height: auto;
+
         h1 {
           display: none;
         }
+
         h3 {
           padding: 0px;
         }
+
         align-self: center;
       }
+
       .seccion2 {
         align-self: flex-start;
       }
@@ -45,65 +54,106 @@
   }
 
   /*STAFF*/
-.staff_container{
-  overflow: visible;
-  .tarjetaInterna {
-    transform: translateY(180px);
+  .staff_container {
+    overflow: visible;
+
+    .tarjetaInterna {
+      transform: translateY(180px);
+    }
+
+    &:hover .tarjetaInterna {
+      transform: translateY(180px);
+    }
   }
-  &:hover .tarjetaInterna {
-    transform: translateY(180px);
-  }
-}
+
   /*SEDES*/
   .bg_img {
     border: none;
   }
+
+  /*CONTACTO*/
+  .comentarios {
+    width: 80%;
+  }
+
+  .contacto {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .oficinas {
+      width: 80vw;
+
+      ul {
+        flex-direction: column;
+      }
+    }
+  }
+
+
   /*CLASES*/
   .clases {
     display: none;
   }
- .menu_sedes {
-  h3 {
-    display: none;
-  }
-  p {
-    font-size: 25px;
-  }
-   .vista_mobile {
-    animation: desplazo 1s ease;
-    display: flex;
-    padding: 0px;
-    list-style: none;
-    height: 70vh;
-    flex-direction: column;
-    text-align: center;
-    li {
-      padding: 3rem 0px;
-      a {
-      font-size: 30px;
-       color: map-get($colores,blanco);
-     }
-    }
-  }
-   .vista_desktop {
-     display: none;
-    }
- }
 
- @keyframes desplazo {
-  0%{
-    opacity: 0;
-    transform: translateY(100px);
+  .menu_sedes {
+    h3 {
+      display: none;
+    }
+
+    p {
+      font-size: 25px;
+    }
+
+    .vista_mobile {
+      animation: desplazo 1s ease;
+      display: flex;
+      padding: 0px;
+      list-style: none;
+      height: 70vh;
+      flex-direction: column;
+      text-align: center;
+
+      li {
+        padding: 3rem 0px;
+
+        a {
+          font-size: 30px;
+          color: map-get($colores, blanco);
+        }
+      }
+    }
+
+    .vista_desktop {
+      display: none;
+    }
   }
-  100% {
-    opacity: 1;
-    transform: translate(0);
+
+  @keyframes desplazo {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
   }
- }
 
   /*INICIO SESION*/
+
+  .inicioSesion {
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+  }
   .form_inicioSesion {
     width: 75vw;
   }
-
 }

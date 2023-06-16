@@ -10,8 +10,8 @@ h2 {
   font-size: calc(1.325rem + 2.5vw);
 }
  h1, h2, h3, button, a {
-  @include fuente("Frijole", 200, 'amarillo');
   text-align: center;
+  @include fuente("Frijole", 200, 'amarillo');
   span {
     @include fuente("Frijole", 200, 'blanco');
   }
