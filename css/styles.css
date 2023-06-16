@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Frijole&display=swap");
 /*GENERAL*/
 * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   font-family: "Coda", cursive;
   font-weight: 200;
   color: #FFFFFF;
@@ -66,7 +69,6 @@ header {
   text-align: center;
 }
 
-/*INDEX*/
 .bodyInicio {
   background-image: url("../img/wallpaper.jpeg");
   background-position: center;
@@ -76,10 +78,11 @@ header {
   height: 85vh;
 }
 .bodyInicio main .seccion1 {
+  animation: animacion1 1s ease;
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 70vh;
+  height: 70%;
   justify-content: space-between;
 }
 .bodyInicio main .seccion1 h3 {
@@ -104,10 +107,31 @@ header {
   transition: all 0.2s;
   outline: 3px solid #ffc107;
 }
-.form-control::placeholder, .form-select::placeholder {
-  color: #FFFFFF;
+
+.seccion2 {
+  animation: animacion2 1s ease;
 }
 
+@keyframes animacion1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes animacion2 {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .vista_mobile {
   display: none;
 }
@@ -159,6 +183,9 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
 }
+.staff_container .tarjetaInterna h3 {
+  color: #FFFFFF;
+}
 .staff_container:hover .tarjetaInterna {
   transform: translateY(130px);
 }
@@ -175,9 +202,9 @@ header {
 }
 
 .sede {
-  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 0.3rem;
   border: 1px solid #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   margin: 1rem;
   padding: 1rem;
@@ -187,9 +214,9 @@ header {
 }
 
 iframe {
-  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 0.3rem;
   border: 1px solid #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   margin: 1rem;
   padding: 1rem;
@@ -221,10 +248,13 @@ h2 {
 h1, h2, h3, button, a {
   font-family: "Frijole", cursive;
   font-weight: 200;
+  color: #ffc107;
+  text-align: center;
 }
 h1 span, h2 span, h3 span, button span, a span {
   font-family: "Frijole", cursive;
   font-weight: 200;
+  color: #FFFFFF;
 }
 
 @media (max-width: 767px) {
@@ -263,17 +293,20 @@ h1 span, h2 span, h3 span, button span, a span {
     display: none;
   }
   .bodyInicio main .seccion1 h3 {
-    padding-bottom: 0px;
+    padding: 0px;
+  }
+  .bodyInicio main .seccion2 {
+    align-self: flex-start;
   }
   /*STAFF*/
+  .staff_container {
+    overflow: visible;
+  }
   .staff_container .tarjetaInterna {
-    transform: translateY(390px);
+    transform: translateY(180px);
   }
   .staff_container:hover .tarjetaInterna {
-    transform: translateY(390px);
-  }
-  .staff_container:active .tarjetaInterna {
-    transform: translateY(130px);
+    transform: translateY(180px);
   }
   /*SEDES*/
   .bg_img {
@@ -290,6 +323,7 @@ h1 span, h2 span, h3 span, button span, a span {
     font-size: 25px;
   }
   .menu_sedes .vista_mobile {
+    animation: desplazo 1s ease;
     display: flex;
     padding: 0px;
     list-style: none;
@@ -306,6 +340,16 @@ h1 span, h2 span, h3 span, button span, a span {
   }
   .menu_sedes .vista_desktop {
     display: none;
+  }
+  @keyframes desplazo {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
   }
   /*INICIO SESION*/
   .form_inicioSesion {

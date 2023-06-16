@@ -1,16 +1,16 @@
 @import 'variables';
 @import 'mixins';
 
-/*INDEX*/
 .bodyInicio {
   @include img_background('../img/wallpaper.jpeg');
   main {
     height: 85vh;
     .seccion1 {
+      animation: animacion1 1s ease;
       display: flex;
       flex-direction: column;
       text-align: center;
-      height: 70vh;
+      height: 70%;
       justify-content:space-between;
       h3 {
         padding-bottom: 3rem;
@@ -18,18 +18,39 @@
       }
     }
   }
-
 .espaciado {
   display: block;
   letter-spacing: 20px;
-}
+} 
 .form-control, .form-select {
   @include inputs;
   &:focus {
     @include inputs;
     outline: 3px solid map-get($colores, amarillo);
   }
-  &::placeholder {
-    color: map-get($colores, blanco);
+  }
+  .seccion2 {
+    animation: animacion2 1s ease;
+  }
+
+@keyframes animacion1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes animacion2 {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

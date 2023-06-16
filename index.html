@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fighter Gym | La mejor versión de vos</title>
     <meta
       name="description"
@@ -30,10 +30,6 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
   </head>
   <body class="bodyInicio bg-black">
     <!--Inicio de encabezado-->
@@ -91,9 +87,7 @@
     <main class="index">
       <div class="container-fluid h-100">
         <div class="row h-100 align-items-center">
-          <section
-            class="seccion1 col-md-6 col-12 animate__animated animate__bounceInLeft"
-          >
+          <section class="seccion1 col-md-6 col-12">
             <h1>
               <span class="text-warning">Fighter</span>
               <span class="d-md-block">G Y M</span>
@@ -103,37 +97,40 @@
               <span class="d-md-block espaciado">de vos</span>
             </h3>
           </section>
-          <section class="col-md-6 col-12 animate__animated animate__flipInX">
-            <h2 class="text-center fs-2">Quiero mi plan:</h2>
+          <section class="seccion2 col-md-6 col-12">
+            <h2 class="text-white fs-2 mb-3">Quiero mi plan:</h2>
             <form class="row">
               <div class="offset-2 col-8">
-                <input
-                  class="form-control mt-4"
-                  type="text"
-                  placeholder="Nombre Completo"
-                />
-                <input
-                  class="form-control mt-4"
-                  type="email"
-                  placeholder="Correo Electrónico"
-                />
-                <input
-                  class="form-control mt-4"
-                  type="date"
-                  placeholder="Fecha de Nacimiento"
-                />
-                <input
-                  class="form-control mt-4"
-                  type="number"
-                  placeholder="Peso (kg)"
-                />
-                <select name="" id="" class="form-select mt-4">
-                  <option value="">Objetivo</option>
-                  <option value="hipertrofia">Hipertrofia</option>
-                  <option value="adelgazar">Adelgazar</option>
-                  <option value="rendimiento">Rendimiento</option>
-                  <option value="fuerza">Fuerza</option>
-                </select>
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre Completo</label>
+                  <input class="form-control" type="text" id="nombre" />
+                </div>
+                <div class="mb-3">
+                  <label for="correo" class="form-label"
+                    >Correo Electrónico</label
+                  >
+                  <input type="email" class="form-control" id="correo" />
+                </div>
+                <div class="mb-3">
+                  <label for="fechaNac" class="form-label"
+                    >Fecha de Nacimiento</label
+                  >
+                  <input type="date" class="form-control" id="fechaNac" />
+                </div>
+                <div class="mb-3">
+                  <label for="peso" class="form-label">Peso (en kg)</label>
+                  <input class="form-control" type="number" id="peso" />
+                </div>
+                <div class="mb-3">
+                  <label for="objetivo" class="form-label">Objetivo</label>
+                  <select name="objetivo" id="objetivo" class="form-select">
+                    <option value=""></option>
+                    <option value="hipertrofia">Hipertrofia</option>
+                    <option value="adelgazar">Adelgazar</option>
+                    <option value="rendimiento">Rendimiento</option>
+                    <option value="fuerza">Fuerza</option>
+                  </select>
+                </div>
                 <button
                   type="submit"
                   class="btn-outline-warning btn float-end mt-4"

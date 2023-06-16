@@ -34,23 +34,24 @@
           display: none;
         }
         h3 {
-          padding-bottom: 0px;
+          padding: 0px;
         }
         align-self: center;
+      }
+      .seccion2 {
+        align-self: flex-start;
       }
     }
   }
 
   /*STAFF*/
 .staff_container{
+  overflow: visible;
   .tarjetaInterna {
-    transform: translateY(390px) ;
+    transform: translateY(180px);
   }
   &:hover .tarjetaInterna {
-    transform: translateY(390px);
-  }
-  &:active .tarjetaInterna {
-    transform: translateY(130px) ;
+    transform: translateY(180px);
   }
 }
   /*SEDES*/
@@ -69,23 +70,35 @@
     font-size: 25px;
   }
    .vista_mobile {
-     display: flex;
-     padding: 0px;
-     list-style: none;
-     height: 70vh;
-     flex-direction: column;
-     text-align: center;
-     li {
-       padding: 3rem 0px;
-       a {
-       font-size: 30px;
-        color: map-get($colores,blanco);
-      }
+    animation: desplazo 1s ease;
+    display: flex;
+    padding: 0px;
+    list-style: none;
+    height: 70vh;
+    flex-direction: column;
+    text-align: center;
+    li {
+      padding: 3rem 0px;
+      a {
+      font-size: 30px;
+       color: map-get($colores,blanco);
+     }
     }
   }
    .vista_desktop {
      display: none;
     }
+ }
+
+ @keyframes desplazo {
+  0%{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
  }
 
   /*INICIO SESION*/

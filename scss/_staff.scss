@@ -26,7 +26,10 @@
     transition: all 0.3s;
     background-color: map-get($colores, op_negro);
     text-align: center;
-  }
+    h3 {
+      color: map-get($colores, blanco );
+    }
+  } 
   &:hover .tarjetaInterna {
     transform: translateY(130px) ;
   }
