@@ -1,11 +1,6 @@
 @media (max-width: 767px) {
 
   /*GENERAL*/
-  .index,
-  .sedeClases,
-  .contacto {
-    height: 100%;
-  }
   .bodyInicio,
   .bodyLinks,
   .bg_img {
@@ -14,14 +9,14 @@
   .img_bodyLinks {
     display: none;
   }
-  .bodyLinks {
-    height: 100%;
+  .main {
+    height: auto;
   }
+
   /*HEADER*/
   .navbar-nav {
     li {
       margin: 1rem;
-
       a {
         font-size: 20px;
       }
@@ -29,25 +24,17 @@
   }
 
   /*INDEX*/
-  .bodyInicio {
-    main {
-      display: flex;
-      .seccion1 {
-        height: auto;
-        h1 {
-          display: none;
-        }
-        h3 {
-          padding: 0px;
-        }
-        align-self: center;
-      }
-      .seccion2 {
-        align-self: flex-start;
-      }
+  .seccion1 {
+    h1 {
+      display: none;
     }
   }
-
+  .bodyInicio {
+    .main {
+      display: block;
+    }
+  }
+    
   /*STAFF*/
   .staff_container {
     overflow: visible;
@@ -131,7 +118,6 @@
   }
 
   /*INICIO SESION*/
-
   .inicioSesion {
     display: flex;
     flex-direction: column;
@@ -143,8 +129,23 @@
   }
 }
 
-@media (max-height: 700px) {
-  body, main, section {
+@media (max-height: 767px) {
+  .bodyInicio {
+    .main {
+      height: auto;
+      display: block;
+    }
+  }
+  .seccion2 {
     height: auto;
-  }  
-} 
+  }
+}
+
+@media (max-width: 767px) and (max-height: 950px) {
+  .bodyInicio {
+    .main {
+      height: auto;
+    }
+  }
+
+}

@@ -2,22 +2,26 @@
 @import 'mixins';
 
 .bodyInicio {
+  height: 100vh;
   @include img_background('../img/wallpaper.jpeg');
-  main {
-    height: 85vh;
-    .seccion1 {
-      animation: animacion1 1s ease;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      height: 90%;
-      justify-content:space-between;
-      h3 {
-        padding-bottom: 3rem;
-      }
-      }
+  .seccion1 {
+    animation: animacion1 1s ease;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:space-between;
+    h3 {
+      padding: 3rem 0px;
     }
   }
+  .main {
+    margin-top: 10vh;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+  }
+}
+
 .espaciado {
   display: block;
   letter-spacing: 20px;

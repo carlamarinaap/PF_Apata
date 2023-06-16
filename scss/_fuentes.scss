@@ -11,9 +11,9 @@ h2 {
 }
  h1, h2, h3, button, a {
   text-align: center;
-  @include fuente("Frijole", 200, 'amarillo');
+  @include fuente("Frijole", 200);
   span {
-    @include fuente("Frijole", 200, 'blanco');
+    @include fuente("Frijole", 200);
   }
 }
 
