@@ -19,6 +19,9 @@
   .navbar-nav {
     li {
       margin: 1rem;
+      a {
+        font-size: 20px;
+      }
     }
   }
   /*INDEX*/
@@ -37,12 +40,19 @@
       }
     }
   }
+
   /*STAFF*/
-  .staff-container{
-    .tarjetaInterna {
-      opacity: 1;
-    }
+.staff_container{
+  .tarjetaInterna {
+    transform: translateY(390px) ;
   }
+  &:hover .tarjetaInterna {
+    transform: translateY(390px);
+  }
+  &:active .tarjetaInterna {
+    transform: translateY(130px) ;
+  }
+}
   /*SEDES*/
   .bg_img {
     border: none;
@@ -78,5 +88,9 @@
     }
  }
 
+  /*INICIO SESION*/
+  .form_inicioSesion {
+    width: 75vw;
+  }
 
 }

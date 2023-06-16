@@ -12,6 +12,9 @@
     outline: 3px solid map-get($colores, amarillo);
   }
 }
+.contacto, .inicioSesion {
+  height: 80vh;
+}
 
 li {
   a { 

@@ -12,6 +12,10 @@
   outline: 3px solid #ffc107;
 }
 
+.contacto, .inicioSesion {
+  height: 80vh;
+}
+
 li a {
   text-decoration: none;
 }
@@ -43,6 +47,9 @@ header {
 }
 
 /*CABECERA*/
+.bodyLinks {
+  height: 100vh;
+}
 .bodyLinks .img_bodyLinks {
   position: absolute;
   top: 0px;
@@ -125,6 +132,7 @@ header {
 
 /*STAFF*/
 .staff_container {
+  overflow: hidden;
   margin: 1.5rem auto;
   width: 300px;
   height: 500px;
@@ -146,14 +154,12 @@ header {
   margin: 1.5rem;
   width: 250px;
   position: relative;
-  opacity: 0;
-  transform: translateY(180px);
+  transform: translateY(390px);
   transition: all 0.3s;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 .staff_container:hover .tarjetaInterna {
-  opacity: 1;
   transform: translateY(130px);
 }
 
@@ -191,8 +197,13 @@ iframe {
   padding: 0;
 }
 
+.form_inicioSesion {
+  margin: 0 auto;
+  width: 50vw;
+}
+
 footer {
-  padding-top: 3rem;
+  padding-top: 20px;
 }
 footer p {
   padding-left: 4rem;
@@ -237,6 +248,9 @@ h1 span, h2 span, h3 span, button span, a span {
   .navbar-nav li {
     margin: 1rem;
   }
+  .navbar-nav li a {
+    font-size: 20px;
+  }
   /*INDEX*/
   .bodyInicio main {
     display: flex;
@@ -252,8 +266,14 @@ h1 span, h2 span, h3 span, button span, a span {
     padding-bottom: 0px;
   }
   /*STAFF*/
-  .staff-container .tarjetaInterna {
-    opacity: 1;
+  .staff_container .tarjetaInterna {
+    transform: translateY(390px);
+  }
+  .staff_container:hover .tarjetaInterna {
+    transform: translateY(390px);
+  }
+  .staff_container:active .tarjetaInterna {
+    transform: translateY(130px);
   }
   /*SEDES*/
   .bg_img {
@@ -286,5 +306,9 @@ h1 span, h2 span, h3 span, button span, a span {
   }
   .menu_sedes .vista_desktop {
     display: none;
+  }
+  /*INICIO SESION*/
+  .form_inicioSesion {
+    width: 75vw;
   }
 }
