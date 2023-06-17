@@ -1,5 +1,13 @@
 @import 'variables';
 
+.bodyClases {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 .vista_mobile {
   display: none;
 }

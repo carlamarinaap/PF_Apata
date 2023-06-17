@@ -1,24 +1,25 @@
 @import 'variables';
 @import 'mixins';
 
-
 /*CABECERA*/
 
-.bodyLinks {
-  height: 100vh;
-  .img_bodyLinks {
-    position:absolute;
-    top: 0px;
-    z-index: -100;
-    img {
-      width: 100vw;
+.bodyClases {
+  .main {
+    .img_bodyLinks {
+      position:absolute;
+      top: 0px;
+      z-index: -10;
+      img {
+        width: 100vw;
+      }
     }
+    .cabecera {
+      position: relative;
+      text-align: center;
+    }
+
   }
   h2 {
     padding: 10vw 0;
-  }
-  .cabecera {
-    position: relative;
-    text-align: center;
-  }
+  } 
 }
