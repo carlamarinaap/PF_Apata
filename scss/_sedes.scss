@@ -3,7 +3,7 @@
 /*SEDES*/
 .bg_img {
   @include bordes;
-  @include img_background ('../img/gimnasios.jpg');
+  @include img_background ('../img/gimnasios.webp');
   background-size: cover;
   margin: 3rem auto;
 }

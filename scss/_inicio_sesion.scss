@@ -1,9 +1,12 @@
 
-.inicioSesion {
-  height: 90vh;
+.bodyInicioSesion {
+  height: 100vh;
+  .main {
+    height: 90vh;
+  }
+  .form_inicioSesion {
+    margin: 0 auto;
+    width: 50vw;
+  }
+}
 
-}
-.form_inicioSesion {
-  margin: 0 auto;
-  width: 50vw;
-}

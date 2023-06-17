@@ -114,35 +114,39 @@
   .comentarios {
     width: 80%;
   }
-
-  .contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .oficinas {
-      width: 80vw;
-      ul {
-        flex-direction: column;
+  .oficinas {
+    width: 80vw;
+    ul {
+      flex-direction: column;
+    }
+  }
+  /*INICIO SESION*/
+  .bodyInicioSesion {
+    .main {
+      display: flex;
+      flex-direction: column;
+      .cabecera {
+        margin-bottom: 10vh;
       }
+    }
+    .form_inicioSesion {
+      width: 75vw;
     }
   }
 
-  /*INICIO SESION*/
-  .inicioSesion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .form_inicioSesion {
-    width: 75vw;
-  }
+
 }
 
+@media (min-width: 2000px) or (max-height: 1100px) {
+  .bodyContacto {
+    .main {
+      height: auto;
+    }
+  } 
+}
 
 @media (max-height: 767px) {
-  .bodyInicio {
+  .bodyInicio, .bodyContacto, .bodyInicioSesion {
     .main {
       height: auto;
       display: block;
@@ -154,7 +158,7 @@
 }
 
 @media (max-width: 767px) and (max-height: 950px) {
-  .bodyInicio, .bodyClases {
+  .bodyInicio, .bodyClases, .bodyContacto {
     .main {
       height: auto;
     }

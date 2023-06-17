@@ -1,5 +1,11 @@
 @import 'mixins';
 
+.bodyContacto {
+  height: 100vh;
+  .main {
+    height: 90vh;
+  }
+}
 .comentarios {
   width: 50%;
   margin: 0 auto;
