@@ -2,17 +2,18 @@
 
   /*GENERAL*/
   .bodyInicio,
-  .bodyLinks,
   .bg_img {
     background-image: none;
+    border: none;
   }
   .img_bodyLinks {
     display: none;
   }
-  .main {
-    height: auto;
+  .bodyInicio, .bodyClases {
+    .main {
+      height: auto;
+    }
   }
-
   /*HEADER*/
   .navbar-nav {
     li {
@@ -22,7 +23,6 @@
       }
     }
   }
-
   /*INDEX*/
   .seccion1 {
     h1 {
@@ -34,23 +34,74 @@
       display: block;
     }
   }
-    
-  /*STAFF*/
-  .staff_container {
-    overflow: visible;
-
-    .tarjetaInterna {
-      transform: translateY(180px);
-    }
-
-    &:hover .tarjetaInterna {
-      transform: translateY(180px);
+  /*CLASES*/
+  .clases {
+    display: none;
+  }    
+  .bodyClases {
+    .main {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   }
+  .menu_sedes {
+    h3, .vista_desktop {
+      display: none;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .vista_mobile {
+    animation: desplazo 1s ease;
+    display: flex;
+    padding: 0px;
+    list-style: none;
+    flex-direction: column;
+    text-align: center;
+    li {
+      padding: 3rem 0px;
+      a {
+        font-size: 30px;
+        color: map-get($colores, blanco);
+      }
+    }
+  }
+  
+  
+  @keyframes desplazo {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  /*STAFF*/
+  .staff_container {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    height: auto;
+    .img_container{
+      position: static;
+      height: 250px;
+      img {
+        width: 150px;
+      }
+    }
+    .tarjetaInterna {
+      height: auto;
+      transform:none;
 
-  /*SEDES*/
-  .bg_img {
-    border: none;
+    }
+      &:hover .tarjetaInterna {
+        transform: none ;
+      }
   }
 
   /*CONTACTO*/
@@ -71,52 +122,6 @@
     }
   }
 
-
-  /*CLASES*/
-  .clases {
-    display: none;
-  }
-
-  .menu_sedes {
-    h3 {
-      display: none;
-    }
-    p {
-      font-size: 20px;
-    }
-
-    .vista_mobile {
-      animation: desplazo 1s ease;
-      display: flex;
-      padding: 0px;
-      list-style: none;
-      flex-direction: column;
-      text-align: center;
-      li {
-        padding: 3rem 0px;
-        a {
-          font-size: 30px;
-          color: map-get($colores, blanco);
-        }
-      }
-    }
-    .vista_desktop {
-      display: none;
-    }
-  }
-
-  @keyframes desplazo {
-    0% {
-      opacity: 0;
-      transform: translateY(100px);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
-  }
-
   /*INICIO SESION*/
   .inicioSesion {
     display: flex;
@@ -128,6 +133,7 @@
     width: 75vw;
   }
 }
+
 
 @media (max-height: 767px) {
   .bodyInicio {
@@ -142,10 +148,9 @@
 }
 
 @media (max-width: 767px) and (max-height: 950px) {
-  .bodyInicio {
+  .bodyInicio, .bodyClases {
     .main {
       height: auto;
     }
   }
-
 }

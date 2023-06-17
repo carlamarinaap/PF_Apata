@@ -3,7 +3,7 @@
 
 .bodyInicio {
   height: 100vh;
-  @include img_background('../img/wallpaper.jpeg');
+  @include img_background('../img/wallpaper.webp');
   .seccion1 {
     animation: animacion1 1s ease;
     display: flex;
