@@ -83,9 +83,10 @@ header {
   padding: 3rem 0px;
 }
 .bodyInicio .main {
+  display: flex;
+  flex-direction: column;
   margin-top: 10vh;
   height: 75vh;
-  display: flex;
   align-items: center;
 }
 
@@ -258,11 +259,14 @@ iframe {
   height: 100vh;
 }
 .bodyInicioSesion .main {
+  display: flex;
+  flex-direction: column;
   height: 90vh;
 }
 .bodyInicioSesion .form_inicioSesion {
   margin: 0 auto;
   width: 50vw;
+  margin-bottom: 5vh;
 }
 
 footer {
@@ -401,11 +405,7 @@ h1 span, h2 span, h3 span, button span, a span {
     flex-direction: column;
   }
   /*INICIO SESION*/
-  .bodyInicioSesion .main {
-    display: flex;
-    flex-direction: column;
-  }
-  .bodyInicioSesion .main .cabecera {
+  .bodyInicioSesion .cabecera {
     margin-bottom: 10vh;
   }
   .bodyInicioSesion .form_inicioSesion {
@@ -418,7 +418,10 @@ h1 span, h2 span, h3 span, button span, a span {
   }
 }
 @media (max-height: 767px) {
-  .bodyInicio .main, .bodyContacto .main, .bodyInicioSesion .main {
+  .bodyInicioSesion .main {
+    height: auto;
+  }
+  .bodyInicio .main, .bodyContacto .main {
     height: auto;
     display: block;
   }
