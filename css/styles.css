@@ -23,11 +23,11 @@ li a {
   text-decoration: none;
 }
 li a i {
-  transform: scale(100%);
+  transform: scale(1);
   transition: all 0.2s;
 }
 li:hover i {
-  transform: scale(115%);
+  transform: scale(1.15);
 }
 
 /*HEADER*/
