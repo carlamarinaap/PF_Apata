@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Frijole&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Frijole&display=swap"); /*MIXINS*/
 /*GENERAL*/
 * {
   padding: 0;
@@ -67,6 +67,7 @@ header {
   font-size: 60px;
 }
 
+/*INDEX*/
 .bodyInicio {
   height: 100vh;
   background-image: url("../img/wallpaper.webp");

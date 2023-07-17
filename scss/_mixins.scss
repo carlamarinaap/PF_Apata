@@ -1,4 +1,4 @@
-@import 'variables';
+/*MIXINS*/
 
 @mixin fuente($nombre, $weight) {
   font-family: $nombre, cursive;
