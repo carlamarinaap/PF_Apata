@@ -62,8 +62,9 @@ header {
   position: relative;
   text-align: center;
 }
-.bodyClases h2, .bodyStaff h2, .bodySedes h2, .bodyContacto h2, .bodyInicioSesion h2 {
+.bodyClases h1, .bodyStaff h1, .bodySedes h1, .bodyContacto h1, .bodyInicioSesion h1 {
   padding: 10vw 0;
+  font-size: 60px;
 }
 
 .bodyInicio {
@@ -434,3 +435,5 @@ h1 span, h2 span, h3 span, button span, a span {
     height: auto;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
